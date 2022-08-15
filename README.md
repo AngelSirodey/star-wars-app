@@ -5,7 +5,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## How to start:
-
+Clone this repo to your local machine using https://github.com/AngelSirodey/star-wars-app.git
 In the project directory run `npm install` to install all the dependencies.\
 Then, run `npm start`.
 
