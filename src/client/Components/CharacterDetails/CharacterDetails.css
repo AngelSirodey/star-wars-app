@@ -1,0 +1,113 @@
+.Details__title {
+    font-size: 40px;
+    margin: 24px 0 24px 12px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(#1fe4f5, #3fbafe);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.Details__info {
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    background: linear-gradient(#60efbc, #58d5c9);
+    list-style-type: none;
+    text-align: left;
+    padding: 10px 20px;
+    margin: 0 12px;
+    font-size: 32px;
+    border-radius: 6px;
+}
+
+.Details__info > p {
+    margin: 8px 0;
+}
+
+.Details__text {
+    font-size: 36px;
+}
+
+.Details__listContainer {
+    margin: 24px 0 0 12px;
+    font-size: 24px;
+}
+
+.Details__list {
+    margin-top: 8px;
+    list-style-type: circle;
+}
+
+.arrow {
+    width: 24px;
+    height: 24px;
+    margin: 40px 0px 8px 12px;
+    display: inline-block;
+    position: relative;
+}
+
+.arrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #3fbafe;
+    border-width: 4px 4px 0 0;
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+  
+.arrow.left::before { 
+    transform: rotate(-135deg);
+    margin: -15px 0 0 -10px;
+}
+
+.arrow::after {
+    content: '';
+    display: block;
+    top: 50%;
+    left: 50%;
+    border-style: solid;
+    border-color: #3fbafe;
+    position: absolute;
+    transform-origin: 50% 50%;
+}
+  
+.arrow.left::after { 
+    width: 80px;
+    height: 0;
+    border-width: 4px 0 0 0;
+    transform: translate(-14px, -3px);
+}
+
+
+@media only screen and (min-width: 480px) {
+
+
+    .Details__title {
+        font-size: 52px;
+    }
+
+    .Details__info {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        font-size: 40px;
+    }
+
+    .Details__info > p {
+        width: 30%;
+        margin: 16px 0;
+    }
+
+    .Details__listContainer {
+        font-size: 32px;
+    }
+
+    .Details__text {
+        font-size: 48px;
+    }
+}
